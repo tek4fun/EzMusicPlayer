@@ -14,6 +14,9 @@
 		91FFCF2A1EC93F5600DF9B33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91FFCF281EC93F5600DF9B33 /* LaunchScreen.storyboard */; };
 		91FFCF351EC93F5600DF9B33 /* EzMusicPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FFCF341EC93F5600DF9B33 /* EzMusicPlayerTests.swift */; };
 		91FFCF401EC93F5600DF9B33 /* EzMusicPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FFCF3F1EC93F5600DF9B33 /* EzMusicPlayerUITests.swift */; };
+		91FFCF501EC9430700DF9B33 /* song1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 91FFCF4D1EC9430700DF9B33 /* song1.mp3 */; };
+		91FFCF511EC9430700DF9B33 /* song2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 91FFCF4E1EC9430700DF9B33 /* song2.mp3 */; };
+		91FFCF521EC9430700DF9B33 /* song3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 91FFCF4F1EC9430700DF9B33 /* song3.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		91FFCF3B1EC93F5600DF9B33 /* EzMusicPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EzMusicPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91FFCF3F1EC93F5600DF9B33 /* EzMusicPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EzMusicPlayerUITests.swift; sourceTree = "<group>"; };
 		91FFCF411EC93F5600DF9B33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91FFCF4D1EC9430700DF9B33 /* song1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song1.mp3; sourceTree = "<group>"; };
+		91FFCF4E1EC9430700DF9B33 /* song2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song2.mp3; sourceTree = "<group>"; };
+		91FFCF4F1EC9430700DF9B33 /* song3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song3.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,7 @@
 		91FFCF1E1EC93F5600DF9B33 /* EzMusicPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				91FFCF531EC94F1200DF9B33 /* Resource */,
 				91FFCF1F1EC93F5600DF9B33 /* AppDelegate.swift */,
 				91FFCF211EC93F5600DF9B33 /* ViewController.swift */,
 				91FFCF231EC93F5600DF9B33 /* Main.storyboard */,
@@ -123,6 +130,24 @@
 				91FFCF411EC93F5600DF9B33 /* Info.plist */,
 			);
 			path = EzMusicPlayerUITests;
+			sourceTree = "<group>";
+		};
+		91FFCF531EC94F1200DF9B33 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				91FFCF5A1EC94F2700DF9B33 /* Music */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		91FFCF5A1EC94F2700DF9B33 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				91FFCF4D1EC9430700DF9B33 /* song1.mp3 */,
+				91FFCF4E1EC9430700DF9B33 /* song2.mp3 */,
+				91FFCF4F1EC9430700DF9B33 /* song3.mp3 */,
+			);
+			name = Music;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,8 +258,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				91FFCF2A1EC93F5600DF9B33 /* LaunchScreen.storyboard in Resources */,
+				91FFCF521EC9430700DF9B33 /* song3.mp3 in Resources */,
 				91FFCF271EC93F5600DF9B33 /* Assets.xcassets in Resources */,
 				91FFCF251EC93F5600DF9B33 /* Main.storyboard in Resources */,
+				91FFCF501EC9430700DF9B33 /* song1.mp3 in Resources */,
+				91FFCF511EC9430700DF9B33 /* song2.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
