@@ -44,7 +44,13 @@ class ViewController: UIViewController,AVAudioPlayerDelegate, UIScrollViewDelega
         super.viewDidLoad()
         scrollView_img.delegate = self
         scrollView_img.showsHorizontalScrollIndicator = false
-        
+        drawView()
+        for i in 0..<songList.count {
+            playScroll(index: i)
+        }
+        playSong(index: 0)
+    }
+    func drawView(){
         controllBar.layer.shadowOffset = CGSize.zero
         controllBar.layer.shadowColor = UIColor.black.cgColor
         controllBar.layer.shadowOpacity = 1
@@ -55,12 +61,28 @@ class ViewController: UIViewController,AVAudioPlayerDelegate, UIScrollViewDelega
         infoBar.layer.shadowOpacity = 1
         infoBar.layer.shadowRadius = 2
         
-        for i in 0..<songList.count {
-            playScroll(index: i)
-        }
-        playSong(index: 0)
+        let designView = UIView()
+        designView.frame = CGRect(x: 400, y: 0, width: 40, height: 300)
+        designView.backgroundColor = UIColor(red:1.00, green:0.00, blue:0.23, alpha:1.00)
+        designView.layer.shadowOffset = CGSize.zero
+        designView.layer.shadowColor = UIColor.black.cgColor
+        designView.layer.shadowOpacity = 1
+        designView.layer.shadowRadius = 2
+//        controllBar.bringSubview(toFront: infoBar)
+//        designView.bringSubview(toFront: infoBar)
+        designView.transform = CGAffineTransform(rotationAngle: CGFloat(-0.785398163))
+        
+        let designLabel = UILabel()
+        designLabel.frame = CGRect(x: 335, y: 105, width: 100, height: 20)
+        designLabel.transform = CGAffineTransform(rotationAngle: CGFloat(0.785398163))
+        designLabel.font = UIFont(name: "HelveticaNeue-Bold", size: 20)
+        designLabel.textColor = UIColor.white
+        designLabel.textAlignment = .center
+        designLabel.text = "HOT"
+        designLabel.bringSubview(toFront: designView)
+        self.view.insertSubview(designLabel, aboveSubview: infoBar)
+        self.view.insertSubview(designView, belowSubview: infoBar)
     }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
